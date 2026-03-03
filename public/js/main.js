@@ -3,10 +3,12 @@ document.addEventListener('DOMContentLoaded', function () {
   // Mobile menu toggle
   const mobileMenuBtn = document.getElementById('mobileMenuBtn');
   const mobileMenu = document.getElementById('mobileMenu');
-
+  const nav = document.querySelector('nav');
+  
   if (mobileMenuBtn && mobileMenu) {
     mobileMenuBtn.addEventListener('click', () => {
       mobileMenu.classList.toggle('hidden');
+      nav.classList.toggle('menu-open');
     });
   }
 
