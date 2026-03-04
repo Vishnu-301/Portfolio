@@ -13,10 +13,111 @@ nav {
   transform: translateX(-50%) !important;
   width: calc(100% - 48px) !important;
   max-width: 1100px !important;
-  border-radius: 999px;
-  transition: border-radius 0.3s ease;
+  border-radius: 24px;
 }
 
 nav.menu-open {
   border-radius: 24px;
+}
+
+/* ── Dark mode base ── */
+.dark body {
+  background: linear-gradient(to bottom, #0f172a, #1e293b) !important;
+  color: #e2e8f0;
+}
+
+/* Nav */
+.dark nav {
+  background: rgba(15, 23, 42, 0.5) !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Nav links */
+.dark nav a {
+  color: #cbd5e1 !important;
+}
+
+.dark nav a:hover {
+  color: #60a5fa !important;
+}
+
+/* Mobile menu border */
+.dark #mobileMenu {
+  border-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+/* Sections */
+.dark section,
+.dark .bg-white {
+  background-color: #1e293b !important;
+}
+
+/* Cards */
+.dark .bg-white.rounded-xl,
+.dark [class*="rounded-xl"].bg-white {
+  background-color: #1e293b !important;
+}
+
+/* Service cards */
+.dark .bg-gradient-to-br {
+  background: #253348 !important;
+  border-color: rgba(255, 255, 255, 0.08) !important;
+}
+
+/* Text */
+.dark .text-gray-900 {
+  color: #f1f5f9 !important;
+}
+
+.dark .text-gray-700 {
+  color: #94a3b8 !important;
+}
+
+.dark .text-gray-600 {
+  color: #94a3b8 !important;
+}
+
+.dark .text-gray-400 {
+  color: #64748b !important;
+}
+
+/* Inputs & textareas */
+.dark input,
+.dark textarea {
+  background-color: #0f172a !important;
+  border-color: #334155 !important;
+  color: #e2e8f0 !important;
+}
+
+.dark input::placeholder,
+.dark textarea::placeholder {
+  color: #475569 !important;
+}
+
+/* Response time box */
+.dark .bg-blue-50 {
+  background-color: #1e3a5f !important;
+}
+
+/* Icon bg pills */
+.dark .bg-blue-100 {
+  background-color: #1e3a5f !important;
+}
+
+.dark .bg-green-100 {
+  background-color: #14532d !important;
+}
+
+.dark .bg-purple-100 {
+  background-color: #3b0764 !important;
+}
+
+/* Footer */
+.dark footer {
+  background-color: #0f172a !important;
+}
+
+/* Hamburger icon */
+.dark #mobileMenuBtn svg {
+  stroke: #cbd5e1;
 }
