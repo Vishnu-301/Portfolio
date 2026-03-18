@@ -1,7 +1,7 @@
 const projects = [
     {
         title: "Job location site",
-        description: "A job finder workspace to find, secure and create your job according to your taste. Created with laravel, alpinejs and tailwind for styling and responsiveness and postgresql for database management.",
+        description: "A free space to book flights and hotels for your next trip. Created with express for the backend and bootstrap css for styling and responsiveness and postgresql for database management.",
         image: "public/img/skywave.png",
         link: "https://skywave-2.onrender.com"
     },
