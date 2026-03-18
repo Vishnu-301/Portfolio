@@ -2,8 +2,8 @@ const projects = [
     {
         title: "Job location site",
         description: "A job finder workspace to find, secure and create your job according to your taste. Created with laravel, alpinejs and tailwind for styling and responsiveness and postgresql for database management.",
-        image: "public/img/workopia-full.png",
-        link: "portfolio.html#project1"
+        image: "public/img/skywave.png",
+        link: "https://skywave-2.onrender.com"
     },
     {
         title: "BuiltBizz blog",
@@ -53,7 +53,7 @@ projects.forEach(project => {
             ${project.description}
         </p>
         <a href="${project.link}"
-            class="inline-block text-blue-600 hover:text-blue-700 font-semibold">View Details →</a>
+            class="inline-block text-blue-600 hover:text-blue-700 font-semibold">View demo →</a>
     </div>
 </div>`;
     portfolioContainer.innerHTML += projectCard;

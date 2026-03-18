@@ -1,2 +1,4 @@
 
 start-server.bat
+.vscode/
+node_modules/
