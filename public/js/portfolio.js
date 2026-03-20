@@ -1,15 +1,9 @@
 const projects = [
     {
-        title: "Job location site",
+        title: "Flight bookimg site",
         description: "A free space to book flights and hotels for your next trip. Created with express for the backend and bootstrap css for styling and responsiveness and postgresql for database management.",
         image: "public/img/skywave.png",
         link: "https://skywave-2.onrender.com"
-    },
-    {
-        title: "BuiltBizz blog",
-        description: "Simple blog site created with raw vanilla php, mysql database javascript for search functionality and bootstrap for styling.",
-        image: "public/img/built-1.png",
-        link: "portfolio.html#project2"
     },
     {
         title: "AgriAI",
