@@ -27,7 +27,7 @@ const projects = [
         title: "Monomart e-commerce site",
         description: "An e-commerce site built with laravel for the backend and tailwind css for styling and responsiveness and mysql for database management.",
         image: "public/img/monomarthome.png",
-        link: "portfolio.html#project1"
+        link: "#"
     }
 ];
 
