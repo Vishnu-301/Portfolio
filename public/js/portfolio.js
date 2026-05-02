@@ -1,5 +1,19 @@
 const projects = [
     {
+        title: "iron-forge gym landing page",
+        description: "A sleek landing page for a gym brand, built with Tailwind CSS and vanilla JavaScript for smooth interactions.",
+        image: "public/img/ironforge.png",
+        link: "https://iron-forge-site.netlify.app/",
+        tags: ["html", "css", "tailwind", "js", "vanilla"]
+    },
+    {
+        title: "Velour Fashion brand site",
+        description: "A stylish product showcase for a fashion brand, crafted with Tailwind CSS and vanilla JavaScript to create an elegant user experience.",
+        image: "public/img/valour.png",
+        link: "https://velour-fashion-brand.netlify.app/",
+        tags: ["html", "css", "tailwind", "js", "vanilla"]
+    },
+    {
         title: "SkyWave – Flight Booking",
         description: "A full-stack flight and hotel booking platform with search, filters, and booking flow.",
         image: "public/img/skywave.png",
