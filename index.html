@@ -11,11 +11,11 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-white">
+<body>
 
-    <!-- Cursor glow (dark mode only) -->
+    <!-- Cursor glow (always enabled) -->
     <div id="cursorGlow"
-        style="position:fixed;width:320px;height:320px;border-radius:50%;pointer-events:none;z-index:9999;background:radial-gradient(circle,rgba(59,130,246,0.06) 0%,transparent 70%);transform:translate(-50%,-50%);opacity:0;transition:opacity 0.4s;top:0;left:0;">
+        style="position:fixed;width:320px;height:320px;border-radius:50%;pointer-events:none;z-index:9999;background:radial-gradient(circle,rgba(79,70,229,0.08) 0%,transparent 70%);transform:translate(-50%,-50%);opacity:0;transition:opacity 0.4s;top:0;left:0;">
     </div>
 
     <!-- ── Navigation ── -->
@@ -38,17 +38,7 @@
                     <a href="#featured" class="text-sm font-medium">Projects</a>
                     <a href="#contact" class="text-sm font-medium">Contact</a>
                     <a href="poster.html" class="text-sm font-medium">Card</a>
-                    <button id="themeToggle" aria-label="Toggle dark mode"
-                        class="ml-1 p-2 rounded-full transition hover:bg-gray-100 dark:hover:bg-white/5">
-                        <svg id="sunIcon" class="w-5 h-5 hidden text-yellow-500" fill="currentColor"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="M12 4a1 1 0 011-1V2a1 1 0 00-2 0v1a1 1 0 011 1zm0 16a1 1 0 01-1 1v1a1 1 0 002 0v-1a1 1 0 01-1-1zm8-8a1 1 0 011-1h1a1 1 0 000-2h-1a1 1 0 01-1 1zM4 12a1 1 0 01-1 1H2a1 1 0 000 2h1a1 1 0 001-1zm12.95-6.364a1 1 0 011.414 0l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 010-1.414zM5.636 17.95a1 1 0 011.414 0l.707.707a1 1 0 01-1.414 1.414l-.707-.707a1 1 0 010-1.414zM17.95 17.95a1 1 0 010 1.414l-.707.707a1 1 0 01-1.414-1.414l.707-.707a1 1 0 011.414 0zM6.343 6.343a1 1 0 010 1.414l-.707.707A1 1 0 014.22 7.05l.707-.707a1 1 0 011.414 0zM12 7a5 5 0 100 10A5 5 0 0012 7z" />
-                        </svg>
-                        <svg id="moonIcon" class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
-                            <path d="M21 12.79A9 9 0 1111.21 3a7 7 0 009.79 9.79z" />
-                        </svg>
-                    </button>
+
                 </div>
             </div>
 
@@ -58,11 +48,7 @@
                 <a href="#skills" class="block text-sm py-2 font-medium">Skills</a>
                 <a href="#featured" class="block text-sm py-2 font-medium">Projects</a>
                 <a href="#contact" class="block text-sm py-2 font-medium">Contact</a>
-                <a href="poster.html" class="block text-sm py-2 font-medium">Card</a>
-                <button id="themeToggleMobile" class="flex items-center gap-2 py-2 text-sm font-medium">
-                    <span id="mobileThemeLabel">Switch to Dark Mode</span>
-                </button>
-            </div>
+
         </div>
     </nav>
 
@@ -136,25 +122,29 @@
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5">
                     <div class="service-card reveal" style="transition-delay:0s">
-                        <div class="service-icon" style="background:rgba(59,130,246,0.1);">🎨</div>
+                        <img src="./public/img/logo/tag.svg" alt="" class="w-6 h-6"
+                            style="margin-bottom:8px; background:rgba(79,70,229,0.1);" />
                         <h3>Front-end Development</h3>
                         <p>Modern responsive interfaces using HTML, CSS, JavaScript and Tailwind. Focused on
                             accessibility, performance, and clean code.</p>
                     </div>
                     <div class="service-card reveal" style="transition-delay:0.08s">
-                        <div class="service-icon" style="background:rgba(168,85,247,0.1);">🗄️</div>
+                        <img src="./public/img/logo/database.svg" alt="" class="w-6 h-6"
+                            style="margin-bottom:8px; background:rgba(79,70,229,0.1);" />
                         <h3>Database & Migrations</h3>
                         <p>Robust database design and migrations for easy access, manipulation, and proper control of
                             your data.</p>
                     </div>
                     <div class="service-card reveal" style="transition-delay:0.16s">
-                        <div class="service-icon" style="background:rgba(34,197,94,0.1);">🔧</div>
+                        <img src="./public/img/logo/consulting.svg" alt="" class="w-6 h-6"
+                            style="margin-bottom:8px; background:rgba(79,70,229,0.1);" />
                         <h3>Consulting</h3>
                         <p>Technical direction, code review, and strategy for teams building modern web applications and
                             resolving bugs.</p>
                     </div>
                     <div class="service-card reveal" style="transition-delay:0.24s">
-                        <div class="service-icon" style="background:rgba(249,115,22,0.1);">⚙️</div>
+                        <img src="./public/img/logo/server.svg" alt="" class="w-6 h-6"
+                            style="margin-bottom:8px; background:rgba(79,70,229,0.1);" />
                         <h3>Backend with PHP</h3>
                         <p>Solid backend and routing with PHP, Laravel, and Express.js — including database management
                             and API development.</p>
@@ -207,58 +197,88 @@
                     <p class="section-label">My Toolkit</p>
                     <h2 class="section-title">Skills & Expertise</h2>
                 </div>
-                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
-                    <div class="skill-pill reveal" style="transition-delay:0s">
-                        <img src="public/img/logo/html.svg" alt="HTML" /><img src="public/img/logo/css.svg" alt="CSS"
-                            style="margin-left:-6px;" />
-                        <span>HTML & CSS</span>
+
+                <!-- Frontend Skills -->
+                <div class="mb-10">
+                    <h3 class="text-lg font-semibold mb-4" style="color: var(--text);">Frontend</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                        <div class="skill-pill reveal" style="transition-delay:0s">
+                            <img src="public/img/logo/html.svg" alt="HTML" /><img src="public/img/logo/css.svg" alt="CSS"
+                                style="margin-left:-6px;" />
+                            <span>HTML & CSS</span>
+                        </div>
+                        <div class="skill-pill reveal" style="transition-delay:0.06s">
+                            <img src="public/img/logo/js.svg" alt="JS" />
+                            <span>JavaScript (ES6+)</span>
+                        </div>
+                        <div class="skill-pill reveal" style="transition-delay:0.12s">
+                            <img src="public/img/logo/tailwind.svg" alt="Tailwind" />
+                            <span>Tailwind CSS</span>
+                        </div>
+                        <div class="skill-pill reveal" style="transition-delay:0.18s">
+                            <img src="public/img/logo/bootstrap.svg" alt="Bootstrap" />
+                            <span>Bootstrap / Responsive</span>
+                        </div>
+                        <div class="skill-pill reveal" style="transition-delay:0.24s">
+                            <img src="public/img/logo/react.svg" alt="React" />
+                            <span>React</span>
+                        </div>
+                        <div class="skill-pill reveal" style="transition-delay:0.3s">
+                            <img src="public/img/logo/typescript.svg" alt="TypeScript" />
+                            <span>TypeScript</span>
+                        </div>
                     </div>
-                    <div class="skill-pill reveal" style="transition-delay:0.06s">
-                        <img src="public/img/logo/js.svg" alt="JS" />
-                        <span>JavaScript (ES6+)</span>
+                </div>
+
+                <!-- Backend Skills -->
+                <div class="mb-10">
+                    <h3 class="text-lg font-semibold mb-4" style="color: var(--text);">Backend</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                        <div class="skill-pill reveal" style="transition-delay:0.36s">
+                            <img src="public/img/logo/node.svg" alt="Node" />
+                            <span>Node.js</span>
+                        </div>
+                        <div class="skill-pill reveal" style="transition-delay:0.42s">
+                            <img src="public/img/logo/express.svg" alt="Express.js" />
+                            <span>Express.js</span>
+                        </div>
+                        <div class="skill-pill reveal" style="transition-delay:0.48s">
+                            <img src="public/img/logo/php.svg" alt="PHP" /><img src="public/img/logo/laravel.svg"
+                                alt="Laravel" style="margin-left:-4px;" />
+                            <span>PHP & Laravel</span>
+                        </div>
+                        <div class="skill-pill reveal" style="transition-delay:0.54s">
+                            <img src="public/img/logo/ejs.svg" alt="EJS" />
+                            <span>EJS Templates</span>
+                        </div>
+                        <div class="skill-pill reveal" style="transition-delay:0.6s">
+                            <img src="public/img/logo/mysql.svg" alt="MySQL" />
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-pill reveal" style="transition-delay:0.66s">
+                            <img src="public/img/logo/postgres.svg" alt="PostgreSQL" />
+                            <span>PostgreSQL</span>
+                        </div>
                     </div>
-                    <div class="skill-pill reveal" style="transition-delay:0.12s">
-                        <img src="public/img/logo/node-js-svgrepo-com.svg" alt="Node" />
-                        <span>Node.js</span>
-                    </div>
-                    <div class="skill-pill reveal" style="transition-delay:0.18s">
-                        <img src="public/img/logo/tailwindcss.svg" alt="Tailwind" />
-                        <span>Tailwind CSS</span>
-                    </div>
-                    <div class="skill-pill reveal" style="transition-delay:0.24s">
-                        <img src="public/img/logo/bootstrap.svg" alt="Bootstrap" />
-                        <span>Bootstrap / Responsive</span>
-                    </div>
-                    <div class="skill-pill reveal" style="transition-delay:0.3s">
-                        <img src="public/img/logo/php.svg" alt="PHP" /><img src="public/img/logo/laravel.svg"
-                            alt="Laravel" style="margin-left:-4px;" />
-                        <span>PHP & Laravel</span>
-                    </div>
-                    <div class="skill-pill reveal" style="transition-delay:0.36s">
-                        <img src="public/img/logo/my-sql.svg" alt="MySQL" />
-                        <span>MySQL</span>
-                    </div>
-                    <div class="skill-pill reveal" style="transition-delay:0.42s">
-                        <img src="public/img/logo/postgre.svg" alt="PostgreSQL" />
-                        <span>PostgreSQL</span>
-                    </div>
-                    <div class="skill-pill reveal" style="transition-delay:0.48s">
-                        <img src="public/img/logo/github.svg" alt="GitHub" /><img src="public/img/logo/git.svg"
-                            alt="Git" style="margin-left:-4px;" />
-                        <span>Git & GitHub</span>
-                    </div>
-                    <div class="skill-pill reveal" style="transition-delay:0.54s"
-                        style="border:1px solid var(--border);">
-                        <span style="font-size:1.1rem;">🔌</span>
-                        <span>REST APIs</span>
-                    </div>
-                    <div class="skill-pill reveal" style="transition-delay:0.6s">
-                        <img src="public/img/logo/ejs.svg" alt="PostgreSQL" />
-                        <span>EJS Templates</span>
-                    </div>
-                    <div class="skill-pill reveal" style="transition-delay:0.66s">
-                        <img src="public/img/logo/express.svg" alt="Express.js" />
-                        <span>Express.js</span>
+                </div>
+
+                <!-- Tools & Other -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4" style="color: var(--text);">Tools & Other</h3>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
+                        <div class="skill-pill reveal" style="transition-delay:0.72s">
+                            <img src="public/img/logo/github.svg" alt="GitHub" /><img src="public/img/logo/git.svg"
+                                alt="Git" style="margin-left:-4px;" />
+                            <span>Git & GitHub</span>
+                        </div>
+                        <div class="skill-pill reveal" style="transition-delay:0.78s">
+                            <img src="public/img/logo/restapi.svg" alt="REST API" />
+                            <span>REST APIs</span>
+                        </div>
+                          <div class="skill-pill reveal" style="transition-delay:0.78s">
+                            <img src="public/img/logo/vscode.svg" alt="vscode" />
+                            <span>Vscode</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -326,8 +346,8 @@
                         <h2 class="section-title mb-6">Let's Connect</h2>
 
                         <div class="contact-info-item">
-                            <div class="contact-icon-box" style="background:rgba(59,130,246,0.1);">
-                                <svg class="w-5 h-5 text-blue-500" fill="none" stroke="currentColor"
+                            <div class="contact-icon-box" style="background:rgba(79,70,229,0.1);">
+                                <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
@@ -342,8 +362,8 @@
                         </div>
 
                         <div class="contact-info-item">
-                            <div class="contact-icon-box" style="background:rgba(34,197,94,0.1);">
-                                <svg class="w-5 h-5 text-green-500" fill="none" stroke="currentColor"
+                            <div class="contact-icon-box" style="background:rgba(79,70,229,0.1);">
+                                <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -359,8 +379,8 @@
                         </div>
 
                         <div class="contact-info-item">
-                            <div class="contact-icon-box" style="background:rgba(168,85,247,0.1);">
-                                <svg class="w-5 h-5 text-purple-500" fill="none" stroke="currentColor"
+                            <div class="contact-icon-box" style="background:rgba(79,70,229,0.1);">
+                                <svg class="w-5 h-5 text-indigo-500" fill="none" stroke="currentColor"
                                     viewBox="0 0 24 24">
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -375,8 +395,8 @@
                         </div>
 
                         <div
-                            style="margin-top:1.5rem;padding:1.2rem 1.4rem;border-radius:14px;background:rgba(59,130,246,0.08);border:1px solid rgba(59,130,246,0.2);">
-                            <p style="font-weight:700;font-size:0.9rem;color:var(--accent);margin-bottom:4px;">⚡
+                            style="margin-top:1.5rem;padding:1.2rem 1.4rem;border-radius:14px;background:rgba(79,70,229,0.08);border:1px solid rgba(79,70,229,0.2);">
+                            <p style="font-weight:700;font-size:0.9rem;color:#4f46e5;margin-bottom:4px;">⚡
                                 Response Time</p>
                             <p style="color:var(--muted);font-size:0.88rem;">I typically respond within 24–48 hours
                                 during business days.</p>
@@ -391,7 +411,7 @@
     <footer class="py-6 px-4 sm:px-6">
         <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-3">
             <span class="logo-gradient font-bold text-lg">Felix.Dev</span>
-            <p style="color:var(--muted);font-size:0.85rem;">© 2025 Felix Portfolio. All rights reserved.</p>
+            <p style="color:var(--muted);font-size:0.85rem;">© 2026 Felix Portfolio. All rights reserved.</p>
             <div class="flex gap-4" style="color:var(--muted);font-size:0.8rem;">
                 <a href="#about" style="color:var(--muted);">About</a>
                 <a href="#featured" style="color:var(--muted);">Work</a>
@@ -404,23 +424,17 @@
     <script src="public/js/toggle.js"></script>
     <script src="public/js/portfolio.js"></script>
     <script>
-        // Cursor glow
+        // Cursor glow - always enabled with indigo theme
         const glow = document.getElementById('cursorGlow');
         document.addEventListener('mousemove', e => {
             glow.style.left = e.clientX + 'px';
             glow.style.top = e.clientY + 'px';
+            glow.style.opacity = '1';
         });
-        document.documentElement.addEventListener('classChange', () => {
-            glow.style.opacity = document.documentElement.classList.contains('dark') ? '1' : '0';
+        // Hide glow when mouse leaves window
+        document.addEventListener('mouseleave', () => {
+            glow.style.opacity = '0';
         });
-        // Check on load
-        function updateGlow() {
-            glow.style.opacity = document.documentElement.classList.contains('dark') ? '1' : '0';
-        }
-        updateGlow();
-        // Watch for dark mode toggle
-        const observer = new MutationObserver(updateGlow);
-        observer.observe(document.documentElement, { attributes: true, attributeFilter: ['class'] });
     </script>
 
 </body>

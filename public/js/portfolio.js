@@ -1,5 +1,18 @@
 const projects = [
     {
+        title: "True vine - Church website",
+        description: "A dynamic church webiste built with react, typescript, and tailwind css. it features a dashboard for admins to post sermons, events, and manage content. The site is optimized for performance and accessibility, providing an engaging experience for visitors.",
+        image: "public/img/truevine.png",
+        link: "https://true-vine-church-website.vercel.app/",
+        tags: ["express", "node", "react", "postgresql", "typescript", "tailwind"]
+    }, {
+        title: "Apex modern builders - home decore website",
+        description: "A home decor website built with react, typescript, and tailwind css. It features a custom CMS for easy content management and a responsive design for seamless access across devices.",
+        image: "public/img/apex-modern-builders.png",
+        link: "https://apex-modern-builders.vercel.app/",
+        tags: [ "react", "typescript", "tailwind"]
+    },
+    {
         title: "iron-forge gym landing page",
         description: "A sleek landing page for a gym brand, built with Tailwind CSS and vanilla JavaScript for smooth interactions.",
         image: "public/img/ironforge.png",
@@ -12,13 +25,6 @@ const projects = [
         image: "public/img/valour.png",
         link: "https://velour-fashion-brand.netlify.app/",
         tags: ["html", "css", "tailwind", "js", "vanilla"]
-    },
-    {
-        title: "SkyWave – Flight Booking",
-        description: "A full-stack flight and hotel booking platform with search, filters, and booking flow.",
-        image: "public/img/skywave.png",
-        link: "https://skywave-2.onrender.com",
-        tags: ["express", "node", "ejs", "postgresql", "bootstrap", "js"]
     },
     {
         title: "AgriAI – Job Finder",
@@ -47,6 +53,13 @@ const projects = [
         image: "public/img/lumier.png",
         link: "https://lumiere-c0sn.onrender.com",
         tags: ["html", "css", "js"]
+    },
+    {
+        title: "SkyWave – Flight Booking",
+        description: "A full-stack flight and hotel booking platform with search, filters, and booking flow.",
+        image: "public/img/skywave.png",
+        link: "https://skywave-2.onrender.com",
+        tags: ["express", "node", "ejs", "postgresql", "bootstrap", "js"]
     },
     {
         title: "Monomart E-Commerce",
