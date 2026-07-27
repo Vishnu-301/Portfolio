@@ -206,6 +206,31 @@ nav a:hover {
 }
 
 /* ── Buttons ── */
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 999px;
+  border: 1px solid var(--border);
+  background: rgba(79, 70, 229, 0.08);
+  color: var(--text);
+  transition: transform 0.2s ease, border-color 0.2s ease, background 0.2s ease;
+}
+
+.social-link:hover {
+  transform: translateY(-2px);
+  border-color: rgba(79, 70, 229, 0.35);
+  background: rgba(79, 70, 229, 0.16);
+  color: var(--accent);
+}
+
+.social-link svg {
+  width: 16px;
+  height: 16px;
+}
+
 .btn-primary {
   display: inline-flex;
   align-items: center;

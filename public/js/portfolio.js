@@ -6,11 +6,18 @@ const projects = [
         link: "https://true-vine-church-website.vercel.app/",
         tags: ["express", "node", "react", "postgresql", "typescript", "tailwind"]
     }, {
+        title: "Rss feeder - feeder page for lateste news",
+        description: "A feeder page for viewing news and latest information on various topics",
+        image: "public/img/rss-feeder.png",
+        link: "https://rss-feeder.netlify.app/",
+        tags: ["react", "typescript", "tailwind", "postgres", "prisma"]
+    },
+    {
         title: "Apex modern builders - home decore website",
         description: "A home decor website built with react, typescript, and tailwind css. It features a custom CMS for easy content management and a responsive design for seamless access across devices.",
         image: "public/img/apex-modern-builders.png",
         link: "https://apex-modern-builders.vercel.app/",
-        tags: [ "react", "typescript", "tailwind"]
+        tags: ["react", "typescript", "tailwind"]
     },
     {
         title: "iron-forge gym landing page",
@@ -115,3 +122,13 @@ projects.forEach((project, i) => {
 
     portfolioContainer.innerHTML += card;
 });
+
+/*
+https://www.instagram.com/felixdev301?igsh=ZGtiNzdqbHFjbndq
+
+https://www.linkedin.com/in/felix-ifeadi-web-developer-0233b7400
+
+https://www.tiktok.com/@witeboiintech?_r=1&_t=ZS-95CzGrHU5fF
+
+https://x.com/IfeadiF68176
+*/
