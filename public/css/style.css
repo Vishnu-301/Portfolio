@@ -412,7 +412,7 @@ nav a:hover {
 
 .project-img-wrap {
   height: 210px;
-  overflow-y: scroll;
+  overflow: hidden;
   position: relative;
 }
 
